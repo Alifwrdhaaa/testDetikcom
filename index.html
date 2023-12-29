@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SUDIRMAN RUN 2022</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- simplyCountdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-left align-items-center text-white">
+        <main>
+            <h1 style="color:darkcyan">SUDIRMAN</h1>
+            <H1 style="color: darkgreen;">RUN 2023</H1>
+            <p>presented:<img src="img/logo.png" alt="logo"></p>
+            <div class="simply-countdown"></div>
+            <a href="#home" class="btn btn-lg mt-4 btn-oval" onClick="enableScroll()">Tentang Acara</a>
+        </main>
+
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+        <div class="container">
+            <div class="offcanvas-title-container">
+                <img src="img/logo.png" alt="Dino">
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <div class="offcanvas-title-container">
+                        <img src="img/logo.png" alt="Dino">
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link me-5" href="#home">Home</a>
+                        <a class="nav-link me-5" href="#info">Tentang acara</a>
+                        <a class="nav-link me-5" href="#gallery">Gallery</a>
+                        <a class="nav-link me-5" href="#rsvp">Berita</a>
+                        <a href="https://event.detik.com/" class="btn btn-warning btn-oval">Registrasi</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="home">
+        <!-- Card pertama -->
+        <div class="Card" style="width: 350px; height: 400px; padding: 20px; background: linear-gradient(253deg, #59FFB9 0%, #326CFF 100%); border-radius: 20px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 25px; display: inline-flex; margin-right: 2%; margin-bottom: 60px;">
+            <div class="Image" style="width: 280px; height: 220px; display: flex; justify-content: center; align-items: center;">
+                <img class="Map1" style="width: 100%; height: 100%; border-radius: 12px; object-fit: cover;" src="img/map 1.png" />
+            </div>
+            <div class="Frame4" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
+                <div class="Frame3" style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+                    <div class="KFunRun" style="text-align: center; color: white; font-size: 28px; font-family: Montserrat; font-style: italic; font-weight: 700; word-wrap: break-word">10K FUN RUN</div>
+                    <div class="DimulaiPukul6PagiNikmatiPemandanganKotaDiPagiHariDimulaiDariBundaranHiHinggaPatungPemudaMembangunDiSenayanLaluKembaliLagiKeBundaranHi" style="width: 280px; color: white; font-size: 14px; font-family: Montserrat; font-weight: 500; word-wrap: break-word">Dimulai pukul 6 pagi, nikmati pemandangan kota di pagi hari dimulai dari Bundaran HI hingga Patung Pemuda Membangun di Senayan lalu kembali lagi ke Bundaran HI!</div>
+                </div>
+            </div>
+        </div>
+        <!-- Kontainer untuk CardNoThumbnail kedua -->
+        <div class="CardContainer" style="display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; gap: 50px; display: inline-flex; margin-left: 4%;">
+            <!-- Card kedua -->
+            <div class="CardNoThumbnail" style="width: 582px; height: 158px; padding: 32px; background: linear-gradient(253deg, #59FFB9 0%, #326CFF 100%); border-radius: 32px; gap: 30px; margin-bottom: 0;">
+                <div class="Frame3" style="flex-direction: column; justify-content: center; align-items: center; gap: 10px;">
+                    <div class="GratisDanBerhadiah" style="color: white; font-size: 36px; font-family: Montserrat; font-style: italic; font-weight: 900; word-wrap: break-word">50+ TENANT BAZZAR</div>
+                    <div class="PendaftaranGratisAjakKeluargaAndaDanMenangkanHadiahTotalPuluhanJutaSertaBerbagaiMacamDoorprizeYangMenarik" style="color: white; font-size: 16px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; max-width: 518px; margin: 0 auto;">Dapatkan promo menarik pada booth-booth tenant bazzar Sudirman Run 2023 mulai dari F&B hingga fashion</div>
+                </div>
+            </div>
+            <!-- Card ketiga -->
+            <div class="CardNoThumbnail" style="width: 582px; height: 158px; padding: 32px; background: linear-gradient(253deg, #59FFB9 0%, #326CFF 100%); border-radius: 32px; gap: 30px; margin-bottom: 0;">
+                <div class="Frame3" style="flex-direction: column; justify-content: center; align-items: center; gap: 10px;">
+                    <div class="GratisDanBerhadiah" style="color: white; font-size: 36px; font-family: Montserrat; font-style: italic; font-weight: 900; word-wrap: break-word">GRATIS DAN BERHADIAH</div>
+                    <div class="PendaftaranGratisAjakKeluargaAndaDanMenangkanHadiahTotalPuluhanJutaSertaBerbagaiMacamDoorprizeYangMenarik" style="color: white; font-size: 16px; font-family: Montserrat; font-weight: 600; word-wrap: break-word; max-width: 518px; margin: 0 auto;">Pendaftaran gratis! Ajak keluarga anda dan menangkan hadiah total puluhan juta rupiah doorprize menarik!</div>
+                </div>
+            </div>
+            <!-- Card keempat -->
+            <div class="CardSideImage" style="width: 582px; height: 242px; padding: 32px; background: linear-gradient(253deg, #59FFB9 0%, #326CFF 100%); border-radius: 32px; justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex">
+                <div class="Image" style="width: 178px; height: 178px; justify-content: center; align-items: center; display: flex">
+                    <img class="Map1" style="width: 178px; height: 178px; border-radius: 20px" src="img/ran.png" />
+                </div>
+                <div class="Frame4" style="flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex">
+                    <div class="Frame3" style="align-self: stretch; height: 158px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+                        <div class="SpecialPerformance" style="align-self: stretch; color: white; font-size: 36px; font-family: Montserrat; font-style: italic; font-weight: 900; word-wrap: break-word">SPECIAL PERFORMANCE</div>
+                        <div class="SaksikanPenampilanDariRanDjWhisnuSantikaDjAdnanVeronSertaHiburanLainnya" style="align-self: stretch; color: white; font-size: 16px; font-family: Montserrat; font-weight: 600; word-wrap: break-word">Saksikan penampilan dari RAN, Ayu Ting Ting, Diskoria, serta hiburan lainnya!</div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+    <section id="info" class="info">
+        <h1>DI DUKUNG OLEH</h1>
+        <div class="slider">
+
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="/img/sponsor1.png" alt="logo">
+                </div>
+                <div class="slide">
+                    <img src="/img/sponsor2.png" alt="logo">
+                </div>
+                <div class="slide">
+                    <img src="/img/sponsor3.png" alt="logo">
+                </div>
+                <div class="slide">
+                    <img src="/img/sponsor4.png" alt="logo">
+                </div>
+                <div class="slide">
+                    <img src="/img/sponsor1.png" alt="logo">
+                </div>
+                <div class="slide">
+                    <img src="/img/sponsor2.png" alt="logo">
+                </div>
+                <div class="slide">
+                    <img src="/img/sponsor3.png" alt="logo">
+                </div>
+                <div class="slide">
+                    <img src="/img/sponsor4.png" alt="logo">
+                </div>
+
+
+                <div class="slide">
+                    <img src="/img/sponsor1.png" alt="logo">
+                </div>
+                <div class="slide">
+                    <img src="/img/sponsor2.png" alt="logo">
+                </div>
+                <div class="slide">
+                    <img src="/img/sponsor3.png" alt="logo">
+                </div>
+                <div class="slide">
+                    <img src="/img/sponsor4.png" alt="logo">
+                </div>
+                <div class="slide">
+                    <img src="/img/sponsor1.png" alt="logo">
+                </div>
+                <div class="slide">
+                    <img src="/img/sponsor2.png" alt="logo">
+                </div>
+                <div class="slide">
+                    <img src="/img/sponsor3.png" alt="logo">
+                </div>
+                <div class="slide">
+                    <img src="/img/sponsor4.png" alt="logo">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="story" class="story">
+        <div class="container">
+            <H1 style="text-align: center; font-family: 'Bebas+Neue', cursive;color: black;
+            font-weight: bold;  margin-bottom: 50px;">GALERY SUDIRMAN RUN 2022</H1>
+            <div class="wrapper">
+                <div class="wrapper-holder">
+                    <div id="slider-img-1"></div>
+                    <div id="slider-img-2"></div>
+                    <div id="slider-img-3"></div>
+                    <div id="slider-img-4"></div>
+                    <div id="slider-img-5"></div>
+                </div>
+            </div>
+            <div class="button-holder">
+                <a href="#slider-img-1" class="button"></a>
+                <a href="#slider-img-2" class="button"></a>
+                <a href="#slider-img-3" class="button"></a>
+                <a href="#slider-img-4" class="button"></a>
+                <a href="#slider-img-5" class="button"></a>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="gallery">
+        <h1 style="text-align: center;">ARTIKEL TERKAIT</h1>
+        <div class="butttton">
+            <a href="#card" class="btn btn-primary btn-block btn-connected" onclick="changeColor(this)">Artikel</a>
+            <a href="#card" class="btn btn-primary btn-block btn-connected" onclick="changeColor(this)">Foto</a>
+            <a href="#card" class="btn btn-primary btn-block btn-connected" onclick="changeColor(this)">Video</a>
+        </div>
+        <article>
+            <div class="card" id="card-1">
+                <img src="img/foto1.png" alt="Image 1" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-text">Kelar Lari di CT Arsa Charity Fun Run, 'Recharge' Energi Nonton Maliq & D'essenti</h5>
+                </div>
+                <p>Sabtu, 18 Nov 2023 17:39 WIB</p>
+            </div>
+            <div class="card" id="card-2">
+                <img src="img/foto2.png" alt="Image 2" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-text">Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h5>
+                </div>
+                <p>Sabtu, 18 Nov 2023 17:39 WIB</p>
+            </div>
+            <div class="card" id="card-1">
+                <img src="img/foto4.png" alt="Image 1" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-text">Gokil! Puluhan Ribu Orang Ramaikan Pertamina Eco RunFest 2023</h5>
+                </div>
+                <p>Sabtu, 18 Nov 2023 17:39 WIB</p>
+            </div>
+            <div class="card" id="card-2">
+                <img src="img/foto6.png" alt="Image 2" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-text">Edukasi Lingkungan Hidup Bonus Sehat di 'Misi Lestari 2023: See Nature</h5>
+                </div>
+                <p>Sabtu, 18 Nov 2023 17:39 WIB</p>
+            </div>
+            <div class="card" id="card-1">
+                <img src="img/foto7.png" alt="Image 1" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-text">CT Arsa Charity Fun Run 2023 Bertabur Emas</h5>
+                </div>
+                <p>Sabtu, 18 Nov 2023 17:39 WIB</p>
+            </div>
+            <div class="card" id="card-2">
+                <img src="img/foto3.png" alt="Image 2" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-text">BTN Jakarta Run 2023 Dorong dan Geliatkan Sport Tourism Jakarta</h5>
+                </div>
+                <p>Sabtu, 18 Nov 2023 17:39 WIB</p>
+            </div>
+        </article>
+        <div class="btn-ovall-container">
+            <a href="https://event.detik.com/" class="btn btn-warning btn-ovall">Registrasi</a>
+        </div>
+    </section>
+
+    <div class="container-fluid bg-ForestGreen text-white-50 footer pt-5 mt-5" style="background-color:#28a997;">
+        <div class="container py-5">
+            <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                <div class="row g-4">
+                    <div class="col-lg-3" style="color: white;">
+                        <h1>SUDIRMAN</h1>
+                        <H1>RUN 2022</H1>
+                        <p>presented by Detik healhty</p>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative mx-auto" style="color: white;">
+                            <p>Event olahraga lari sejauh 10 kilometer yang diselenggarakan oleh Detikhealth secara gratis untuk masyarakat Indonesia. Ajak keluarga dan kerabat anda untuk ikut keseruan Sudirman Run 2023 lalu menangkan hadiah utama serta
+                                doorprize dengan total puluhan juta rupiah</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <p style="text-align:right; color:white">contact with as</p>
+                        <div class="d-flex justify-content-end pt-3">
+                            <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" style="color: white;" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" style="color: white;" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" style="color: white;" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-secondary btn-md-square rounded-circle" style="color: white;" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-light"><i class="fas fa-copyright text-light me-2">Copyright @ 2023 detikcom. All right reserved</i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <script>
+        const stickyTop = document.querySelector('.sticky-top');
+        const offcanvas = document.querySelector('.offcanvas');
+
+        offcanvas.addEventListener('show.bs.offcanvas', function() {
+            stickyTop.style.overflow = 'visible';
+        });
+
+        offcanvas.addEventListener('hidden.bs.offcanvas', function() {
+            stickyTop.style.overflow = 'hidden';
+        });
+    </script>
+    <script>
+        function changeColor(element) {
+            // Hapus kelas 'active' dari semua tombol
+            document.querySelectorAll('.btn-connected').forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+
+            // Tambahkan kelas 'active' ke tombol yang diklik
+            element.classList.add('active');
+
+            // Tampilkan pesan pop-up
+            alert('Cek saja langsung untuk: ' + element.textContent);
+        }
+    </script>
+</body>
+
+</html>

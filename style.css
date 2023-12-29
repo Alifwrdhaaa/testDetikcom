@@ -1,0 +1,500 @@
+:root {
+    --pink: #f14e95;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 500px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bujal.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.hero {
+    position: relative;
+    min-height: 120vh;
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+    text-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-family: 'Anton', cursive;
+    font-size: 6rem;
+}
+
+.hero h4 {
+    font-size: 1.6rem;
+}
+
+.hero p {
+    font-size: 1rem;
+}
+
+.hero a {
+    color: white;
+    background-color: darkorange;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+    background-color: gold;
+    color: white;
+}
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+    font-family: 'Bebas+Neue', cursive;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+}
+
+.btn-oval {
+    border-radius: 50px;
+    /* Sesuaikan nilai border-radius sesuai keinginan Anda */
+    padding: 10px 20px;
+    /* Sesuaikan nilai padding sesuai keinginan Anda */
+    display: inline-block;
+    text-decoration: none;
+    /* Optional: hilangkan garis bawah pada tautan jika tidak diperlukan */
+}
+
+.home {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.Card:hover {
+    transform: scale(1.1);
+    /* Atur faktor zoom sesuai kebutuhan */
+    transition: transform 0.3s ease;
+    /* Efek transisi untuk animasi smooth */
+}
+
+.CardNoThumbnail:hover {
+    transform: scale(1.1);
+    /* Atur faktor zoom sesuai kebutuhan */
+    transition: transform 0.3s ease;
+    /* Efek transisi untuk animasi smooth */
+}
+
+.CardSideImage:hover {
+    transform: scale(1.1);
+    /* Atur faktor zoom sesuai kebutuhan */
+    transition: transform 0.3s ease;
+    /* Efek transisi untuk animasi smooth */
+}
+
+.info {
+    background-color: #326CFF;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.info h1 {
+    font-family: 'Bebas+Neue', cursive;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 40s linear infinite;
+}
+
+.slide-track .slide img {
+    width: 216px;
+    height: 94px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+.slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    perspective: 100px;
+}
+
+img {
+    width: 70%;
+}
+
+img:hover {
+    transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after {
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.story,
+.gallery,
+.rsvp,
+.gifts {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.story span,
+.gallery span,
+.gifts span {
+    text-transform: uppercase;
+    color: #666;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.story p,
+.gallery p,
+.rsvp p,
+.gifts p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+.container {
+    position: relative;
+}
+
+.container .wrapper {
+    width: 60vw;
+    height: 75vh;
+    margin: 5rem auto;
+    overflow: hidden;
+}
+
+.container .wrapper-holder {
+    display: grid;
+    grid-template-columns: repeat(10, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 30s ease-in-out infinite alternate;
+}
+
+.container #slider-img-1 {
+    background-image: url(img/foto1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img-2 {
+    background-image: url(img/foto2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img-3 {
+    background-image: url(img/foto6.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img-4 {
+    background-image: url(img/foto7.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img-5 {
+    background-image: url(img/foto4.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container .button-holder .button {
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+
+.container .button-holder {
+    position: absolute;
+    left: 42%;
+    bottom: 0%;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 7px 4px rgba(0, 0, 0.0.6);
+}
+
+.btn-ovall {
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    /* Optional: Set text color to be visible on the button */
+}
+
+.btn-ovall-container {
+    text-align: center;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0%);
+    }
+    10% {
+        transform: translateX(-100%);
+    }
+    20% {
+        transform: translateX(-100%);
+    }
+    30% {
+        transform: translateX(-200%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    70% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-300%);
+    }
+    90% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    /* Memungkinkan wrapping ke baris baru */
+    justify-content: space-around;
+    /* Menyusun card secara horizontal */
+    align-items: center;
+    /* Pusatkan card secara horizontal */
+    padding: 50px;
+}
+
+.card {
+    overflow: hidden;
+    width: 300px;
+    margin: 10px;
+    /* Tambahkan margin sesuai kebutuhan */
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10%;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.card:hover .card-body {
+    background-color: white;
+    color: gold;
+}
+
+.butttton {
+    text-align: center;
+}
+
+.btn-connected.active {
+    background-color: #007bff;
+    color: #fff;
+    /* Atur gaya lain sesuai kebutuhan Anda */
+}
+
+
+/* Gaya untuk tombol saat dihover */
+
+.btn-connected:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Latar belakang putih dengan alpha 0.8 (80% transparan) */
+    color: #007bff;
+    /* Atur gaya lain sesuai kebutuhan Anda */
+}
+
+
+/* Gaya untuk garis di atas dan di bawah footer */
+
+*** Footer Start ***/ .footer .footer-item .btn-link {
+    line-height: 35px;
+    color: rgba(0, 177, 24, 0.5);
+    transition: 0.5s;
+}
+
+.footer .footer-item .btn-link:hover {
+    color: var(--bs-secondary) !important;
+}
+
+.footer .footer-item p.mb-4 {
+    line-height: 35px;
+}
+
+
+/* footer end */
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Media Query */
+
+
+/* Extra large */
+
+@media (max-width: 1200px) {
+    .home .heart {
+        transform: translateX(-50%) translateY(45px);
+    }
+}
+
+
+/* laptop */
+
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+    .simply-countdown>.simply-section {
+        padding: 70px;
+    }
+    .home .heart {
+        display: none;
+    }
+    .timeline::before {
+        left: 60px;
+    }
+    .Footer {
+        width: 100%;
+    }
+}
+
+
+/* tablet */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+    .simply-countdown>.simply-section {
+        padding: 60px;
+        margin: 5px;
+    }
+    .mynavbar .nav-link {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .sticky-top {
+        overflow: hidden;
+    }
+}
+
+
+/* mobile phone */
+
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+    .simply-countdown>.simply-section {
+        padding: 45px;
+        margin: 3px;
+    }
+}
